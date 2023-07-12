@@ -1,0 +1,16 @@
+.btnContainer{
+  position: absolute;
+  display: flex;
+  bottom: 22px;
+  left: 15px;
+  flex-wrap: wrap;
+  .btn_play_pause{
+    all: unset;
+    cursor: pointer;
+    #img_play_pause{
+      height: 37px;
+      width: 36px;
+    }
+  }
+}
+

@@ -1,0 +1,19 @@
+.vidContainer{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  #videoLink{
+    height: auto;
+    background-color: black;
+    border-radius: 23px;
+  }
+}
+@media screen and (max-width: 870px){
+  .vidContainer{
+    #videoLink{
+      width: 100%;
+      height: auto;
+      padding: 0 10px;
+    }
+  }
+}

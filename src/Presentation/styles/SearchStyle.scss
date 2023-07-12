@@ -1,0 +1,30 @@
+.searchBar{
+  margin-bottom: 50px;
+  line-height: 31px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  .searchInput{
+    flex-grow: 0.35;
+    border: 2px solid lightgray;
+    background-color: white;
+    padding: 0 20px;
+    font-size: 16px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius:40px;
+    &:focus{
+      outline: 3px solid darkred;
+    }
+  }
+  .searchBtn{
+    border: none;
+    background-color: #f8f8f8;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    padding: 7px 20px;
+    &:hover{
+      background-color: darkred;
+      outline: 2px solid darkred;
+    }
+  }
+}
