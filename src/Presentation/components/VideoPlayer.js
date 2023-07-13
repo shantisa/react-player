@@ -3,7 +3,6 @@ import "../styles/VideoStyle.scss"
 import VideoButton from "./VideoButton";
 import VideoPlayerViewModel from "../ViewModel/VideoPlayerViewModel";
 import VideoTime from "./VideoTime";
-import FullScreenButton from "./FullScreenButton";
 export default function VideoPlayer(props){
     const viewModel = VideoPlayerViewModel();
     return(
@@ -19,7 +18,6 @@ export default function VideoPlayer(props){
                 </video>
                 {viewModel.showControls ? <VideoButton onClick={viewModel.playPause} isPlaying={viewModel.isPlaying} /> : ""}
                 {viewModel.showControls ? <VideoTime videoTime={viewModel.videoTime} /> : ""}
-                {viewModel.showControls ? <FullScreenButton onClick={viewModel.toggleFullScreen} /> : ""}
             </div>
         </React.Fragment>
     );

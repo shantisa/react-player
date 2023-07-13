@@ -44,21 +44,6 @@ export default function VideoPlayerViewModel() {
         }
         setVideoTime(videoTimeStr);
     }
-
-    function toggleFullScreen(){
-        const VIDEO = videoRef.current;
-        /*Request for full screen, have the control bar show. When the minimize button is selected from the
-         control bar in full screen mode, it should set the player back to normal*/
-        if (VIDEO.requestFullscreen) {
-            VIDEO.requestFullscreen();
-        } else if (VIDEO.webkitRequestFullscreen) { /* Safari */
-            VIDEO.webkitRequestFullscreen();
-        } else if (VIDEO.msRequestFullscreen) { /* IE11 */
-            VIDEO.msRequestFullscreen();
-        }
-        setFullScreen(!isFullScreen);
-        setShowControls(true);
-    }
     function resetPlayer(){
         setVideoTime(INITIAL_TIME);
         setPlaying(false);
@@ -73,7 +58,6 @@ export default function VideoPlayerViewModel() {
         isFullScreen,
         updateTime,
         resetPlayer,
-        toggleFullScreen,
         playPause
     }
 }
