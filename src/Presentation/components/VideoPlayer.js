@@ -11,8 +11,7 @@ export default function VideoPlayer(props){
                  onMouseEnter={() => viewModel.setShowControls(true)}
                  onMouseLeave={() => viewModel.setShowControls(false)}
             >
-                <video ref={viewModel.videoRef} id="videoLink" width="854" onTimeUpdate={viewModel.updateTime} onLoadedData={viewModel.resetPlayer}
-                       controls={viewModel.isFullScreen} >
+                <video ref={viewModel.videoRef} id="videoLink" width="854" onTimeUpdate={viewModel.updateTime} onLoadedData={viewModel.resetPlayer} >
                     <source id="videoSource" src={props.videoSource} type="video/mp4"/>
                     Your browser does not support the video tag.
                 </video>

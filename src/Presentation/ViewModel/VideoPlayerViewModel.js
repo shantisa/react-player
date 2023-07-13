@@ -4,7 +4,6 @@ import { useState } from "react";
 export default function VideoPlayerViewModel() {
     const [showControls, setShowControls] = useState(false);
     const [isPlaying, setPlaying] =  useState(false);
-    const [isFullScreen, setFullScreen] =  useState(false);
     const INITIAL_TIME = "00:00"
     const [videoTime, setVideoTime] = useState(INITIAL_TIME);
     const videoRef = useRef(null);
@@ -55,7 +54,6 @@ export default function VideoPlayerViewModel() {
         videoRef,
         videoTime,
         isPlaying,
-        isFullScreen,
         updateTime,
         resetPlayer,
         playPause
