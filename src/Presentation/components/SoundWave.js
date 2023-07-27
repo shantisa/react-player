@@ -1,8 +1,10 @@
-import React from "react";
+import React, {forwardRef} from "react";
 import "../styles/SoundStyle.scss"
-export default function SoundWave(){
+const SoundWave = forwardRef((props, ref) => {
     return(
-        <div>
+        <div className="waveContainer">
+            <canvas id="wave" ref={ref}></canvas>
         </div>
     );
-}
+});
+export default SoundWave;

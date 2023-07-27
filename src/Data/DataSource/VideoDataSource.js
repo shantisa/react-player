@@ -1,5 +1,5 @@
 export default function VideoDataSource() {
-    let videoUrl = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+    let videoUrl = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4";
     function getURL(){
         return videoUrl;
     }
