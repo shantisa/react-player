@@ -149,6 +149,7 @@ export default function VideoPlayerViewModel() {
         setWaveInit(false);
         const duration = formatTime(videoRef.current.duration);
         setVideoDuration(duration);
+        setProgressWidth(0);
     }
 
     return{
