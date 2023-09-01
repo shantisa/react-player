@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "cypress": "^12.17.4",
     "jest": "^27.5.1"
   }
 }
