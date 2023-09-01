@@ -7,6 +7,8 @@ module.exports = defineConfig({
     video: true,
     screenshotsFolder: "src/test/cypress/screenshots",
     videosFolder: "src/test/cypress/videos",
+    supportFile: "src/test/cypress/support/e2e.js",
+    specPattern: "src/test/cypress/integration/*.spec.js",
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
