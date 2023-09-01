@@ -2,18 +2,69 @@
   position: relative;
   display: inline-block;
   overflow: hidden;
+  &:hover > #videoControls{
+    transform: translateY(0);
+  }
   #videoLink{
+    box-sizing: border-box;
     height: auto;
     background-color: black;
-    border-radius: 23px;
+    //border-radius: 23px;
+  }
+  #videoControls{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    transform: translateY(100%) translateY(-5px);
+    transition: .3s;
+    background: rgba(0, 0, 0, 0.5);
+    min-height: 11.5%;
   }
 }
 @media screen and (max-width: 870px){
   .vidContainer{
+    width: 95%;
     #videoLink{
       width: 100%;
       height: auto;
-      padding: 0 10px;
+    }
+    #videoControls{
+      min-height: 12%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 770px) {
+  .vidContainer {
+    #videoControls {
+      min-height: 15.5%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .vidContainer{
+    #videoControls{
+      min-height: 17%;
+    }
+  }
+}
+
+@media screen and (max-width: 570px){
+  .vidContainer{
+    #videoControls{
+      min-height: 18.5%;
+    }
+  }
+}
+
+@media screen and (max-width: 520px){
+  .vidContainer{
+    #videoControls{
+      min-height: 19.5%;
     }
   }
 }

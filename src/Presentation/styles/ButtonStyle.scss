@@ -1,8 +1,10 @@
 .btnContainer{
   position: absolute;
   display: flex;
-  bottom: 22px;
-  left: 15px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 1.4%;
+  margin-left: 2%;
   flex-wrap: wrap;
   .btn_play_pause{
     all: unset;
@@ -13,4 +15,5 @@
     }
   }
 }
+
 

@@ -1,12 +1,41 @@
 .timeContainer{
   display: flex;
   position: absolute;
-  bottom:25px;
-  right:55px;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 2.5%;
+  margin-right: 6%;
   #currentTime{
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 530;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
+  }
+}
+@media screen and (max-width: 770px){
+  .timeContainer{
+    margin-right:8%;
+    margin-bottom: 2.6%;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .timeContainer{
+    margin-right:9.5%;
+    margin-bottom: 2.7%;
+  }
+}
+
+@media screen and (max-width: 580px){
+  .timeContainer{
+    margin-right:9.5%;
+    margin-bottom: 2.8%;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .timeContainer{
+    margin-right:9.5%;
+    margin-bottom: 3.5%;
   }
 }

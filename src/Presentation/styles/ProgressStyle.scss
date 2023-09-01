@@ -1,0 +1,17 @@
+.progressContainer{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  transition: .3s;
+  background-color: #303030;
+  cursor: pointer;
+  &:hover{
+    height: 8px;
+  }
+  #progressFilled{
+    width: 0;
+    background-color: #c8090b;
+    cursor: pointer;
+  }
+}

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-	<circle style="fill: rgb(0, 0, 0); stroke: rgb(0, 0, 0);" transform="matrix(0.818331, 0, 0, 0.817254, -47.463177, -37.173496)" cx="364.8" cy="351.8" r="304" fill="lightgray" fill-opacity="0.70"/>
 	<path d="M 186.798 170.16 L 227.895 170.16 L 227.895 345.426 L 186.798 345.426 L 186.798 170.16 Z M 268.993 170.16 L 310.091 170.16 L 310.091 345.426 L 268.993 345.426 L 268.993 170.16 Z" fill="white" />
 </svg>

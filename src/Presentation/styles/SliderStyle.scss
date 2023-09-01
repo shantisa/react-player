@@ -1,8 +1,10 @@
 .sliderContainer{
   display: inline;
   position: absolute;
-  bottom:18px;
-  right:106px;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 1.4%;
+  margin-right: 16.5%;
   &:hover > .slider {
     max-width: 90px;
     opacity: 1;
@@ -15,7 +17,7 @@
     transition: max-width 1s ease;
     -webkit-appearance: none;
     opacity: 0;
-    max-width: 0px;
+    max-width: 0;
     max-height: 3px;
     background: white;
     outline: none;
@@ -45,5 +47,29 @@
         transform: scale(1.15);
       }
     }
+  }
+}
+
+@media screen and (max-width: 770px){
+  .sliderContainer{
+    margin-right: 20.5%;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .sliderContainer{
+    margin-right: 23.5%;
+  }
+}
+
+@media screen and (max-width: 580px){
+  .sliderContainer{
+    margin-right: 24.5%;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .sliderContainer{
+    margin-right: 29%;
   }
 }
